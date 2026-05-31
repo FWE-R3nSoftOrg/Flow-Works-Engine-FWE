@@ -1,0 +1,55 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting, check the roadmap in README.md — it may already be planned.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Core / Architecture
+        - Model tab
+        - Material tab
+        - Environment tab
+        - Simulate tab
+        - Node system
+        - File formats
+        - Export
+        - UI / UX
+        - GPU compute
+        - Audio
+        - Lighting
+        - Materials library
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the gap or limitation you're hitting.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: What would you like to see?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any other approaches you thought of?
+    validations:
+      required: false

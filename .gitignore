@@ -1,0 +1,51 @@
+# Build output
+build/
+out/
+cmake-build-*/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# IDE
+.vscode/
+.idea/
+*.user
+*.suo
+*.sln.docinfo
+.vs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# FWE temp files
+*.fwe-tmp
+*.fwe-swap
+
+# Logs
+*.log
+logs/

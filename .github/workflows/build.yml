@@ -1,0 +1,67 @@
+name: Build Check
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-linux:
+    name: Linux (GCC)
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            cmake \
+            build-essential \
+            python3-dev \
+            libocct-foundation-dev \
+            libocct-modeling-algorithms-dev \
+            qt6-base-dev \
+            libopencl-dev
+
+      - name: Configure
+        run: cmake -B build -DCMAKE_BUILD_TYPE=Release -DFWE_BUILD_TESTS=ON
+
+      - name: Build
+        run: cmake --build build --parallel $(nproc)
+
+      - name: Test
+        run: ctest --test-dir build --output-on-failure
+
+  build-windows:
+    name: Windows (MSVC)
+    runs-on: windows-2022
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake -B build -DCMAKE_BUILD_TYPE=Release -DFWE_BUILD_TESTS=ON
+
+      - name: Build
+        run: cmake --build build --config Release
+
+      - name: Test
+        run: ctest --test-dir build -C Release --output-on-failure
+
+  lint:
+    name: Code Quality
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install clang-tidy
+        run: sudo apt-get install -y clang-tidy
+
+      - name: Run clang-tidy
+        run: |
+          cmake -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+          clang-tidy src/**/*.cpp -- -std=c++17

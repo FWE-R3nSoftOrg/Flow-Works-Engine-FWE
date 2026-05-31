@@ -1,0 +1,60 @@
+name: Material Data Submission
+description: Submit validated material property data for fwe-materials
+title: "[MATERIAL] "
+labels: ["material-data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Material submissions must use **primary sources only**. Every value needs a citation.
+        GPLv3-compatible sources only — no Engineering Toolbox, no MatWeb.
+
+  - type: input
+    id: material
+    attributes:
+      label: Material name
+      placeholder: e.g. Titanium Aluminide (γ-TiAl)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Metal
+        - Polymer
+        - Ceramic
+        - Composite
+        - Natural / Biological
+        - Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: properties
+    attributes:
+      label: Properties included
+      options:
+        - label: Mechanical (density, moduli, strength)
+        - label: Thermal (conductivity, specific heat, expansion)
+        - label: Acoustic (speed of sound, impedance, absorption)
+        - label: Optical (refractive index, reflectivity)
+        - label: Electrical (conductivity, permittivity)
+        - label: Magnetic (permeability, saturation)
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources cited
+      description: List every source with DOI or URL. Primary sources only.
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any gaps, derived values, or confidence flags to call out.
+    validations:
+      required: false
