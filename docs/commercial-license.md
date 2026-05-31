@@ -2,28 +2,32 @@
 
 ## Overview
 
-FWE core is **GPLv3, free forever**. The commercial license is for organizations that need to integrate FWE's file formats into their own products, or require enterprise-grade security for R&D workflows.
+FWE core is GPLv3, free forever. The commercial license is for organizations that need to integrate FWE's file formats into their own products, or require enterprise-grade security for R&D workflows.
 
 ---
 
 ## Tiers
 
 ### Community — Free
+
 - Full FWE application, all simulation features
 - `.fwe` open format family (TOML/JSON, GPLv3)
 - Community node and material contributions
 - No license key required
 
 ### Commercial API License
+
 - Binary `.fwe-*-com` format family read/write
 - FWE API spec access — integrate `.fwe` formats into your own pipeline
 - SDK for external software integration
 - Private node building rights
 - Org-shared library access
 - Seat-limited, files shareable between licensed installs for collaboration
-- Target: game studios, OEMs, defense contractors, Unity/Unreal integrators
+
+Target: game studios, OEMs, software integrators, Unity/Unreal pipelines
 
 ### Enterprise R&D License
+
 - Everything in Commercial
 - `.fwe-*-ent` encrypted format family — org-specific ECC encryption
 - Files unreadable without your org's private key
@@ -31,7 +35,8 @@ FWE core is **GPLv3, free forever**. The commercial license is for organizations
 - Zero-knowledge guarantee: we cannot access your files
 - Extended migration windows on major version updates
 - Enterprise support
-- Target: R&D organizations where IP leakage is unacceptable
+
+Target: R&D organizations where IP leakage is unacceptable
 
 ---
 
@@ -39,9 +44,9 @@ FWE core is **GPLv3, free forever**. The commercial license is for organizations
 
 No separate installer. No different binary. Same FWE everyone downloads.
 
-Settings → Version/License → paste your API key → capabilities unlock.
+**Settings → Version/License → paste your API key → capabilities unlock.**
 
-The commercial layer is **invisible to community users**. If you don't have a key, you don't see it. The Settings license field doesn't appear in community mode.
+The commercial layer is invisible to community users. If you don't have a key, you don't see it. The Settings license field doesn't appear in community mode.
 
 ---
 
