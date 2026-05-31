@@ -12,12 +12,20 @@
 
 FWE lets you **model, simulate, and iterate** without ever leaving the app.
 
-No fragmented tools. No paid licenses. The simulation power already exists in open-source engines — FWE is the layer that finally makes them human.
+The simulation power already exists in open-source engines — FWE is the layer that finally makes them human. No fragmented tools. No paid licenses. No modular installs where half the physics are missing.
 
 - **Model** any geometry — engines, speakers, rotors, airframes, anything
-- **Assign** real physics and material properties
+- **Assign** real material properties with validated physical data
 - **Simulate** — fluid, thermal, structural, acoustic, electromagnetic, and more
 - **Iterate** — checkpoints, overlays, live data, exportable results
+
+---
+
+## Why FWE Exists
+
+Every simulation tool today is either locked behind expensive licenses, fragmented across five different programs, or requires a PhD to set up. The open-source engines that could do the job — OpenFOAM, FEniCS, CalculiX, OpenAL — are powerful but inaccessible to most engineers and builders.
+
+FWE connects them into one coherent workflow. Same project file, same interface, physics that talk to each other.
 
 ---
 
@@ -81,18 +89,18 @@ v0.4.0+ Advanced Materials → Ballistics → Instrument / VST pipeline
 
 ---
 
-## Business Model
+## How FWE Stays Free
 
-| Tier | License | Who |
-|---|---|---|
-| FWE core | GPLv3, free forever | Everyone |
-| Community modules | GPLv3, public | Anyone builds and shares |
-| Private modules | Commercial API license | Companies build internally |
-| FWE API spec | Licensed commercially | Studios, OEMs, defense, integrators |
-| Verified environment presets | Commercial bundle | ISO-certified, real-world characterized |
-| Priority material data | Commercial bundle | Advanced composites, high-spec materials |
+FWE core is GPLv3, free forever. A commercial API license exists for organizations that want to integrate the `.fwe` format into their own products or build private modules — that's what funds continued development. It's invisible to 99% of users.
 
-*`.fwe` as the industry standard for simulation-accurate 3D assets is the long-term moat.*
+| Tier | License |
+|---|---|
+| FWE core | GPLv3, free forever |
+| Community modules | GPLv3, public |
+| Private modules | Commercial API license |
+| FWE API spec + verified data | Commercial bundle |
+
+Individual users always work in the open `.fwe` format — no keys, no barriers, no lock-in.
 
 ---
 
@@ -121,14 +129,14 @@ make -j$(nproc)
 
 ## Contributing
 
-FWE is community-built. Contributions are welcome across all areas:
+FWE is community-built. The core is C++ but contributions are welcome across everything:
 
-- **C++ / simulation engineering** — core, sub-mains, solver integrations
-- **Python** — scripting layer, materials pipeline, tooling
+- **C++ / simulation engineering** — core architecture, sub-mains, solver integrations
+- **Python** — scripting layer, materials pipeline, build tooling
 - **UI / UX** — Dear ImGui, Qt
-- **Domain expertise** — acoustics, fluid dynamics, structural, thermodynamics
+- **Domain expertise** — if you know acoustics, fluid dynamics, structural, thermodynamics, or any simulation domain deeply, that knowledge matters as much as the code
 - **Material data** — validated property submissions to `fwe-materials`
-- **Node contributions** — submit to `fwe-nodes`
+- **Node contributions** — new node types submitted to `fwe-nodes`
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
@@ -139,7 +147,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 FWE core is licensed under **GNU General Public License v3.0**.  
 See [LICENSE](LICENSE) for full terms.
 
-Commercial API license available for enterprise integrators — see [docs/commercial-license.md](docs/commercial-license.md).
+Commercial API license available for integrators building on the `.fwe` format — see [docs/commercial-license.md](docs/commercial-license.md).
 
 ---
 
