@@ -118,6 +118,9 @@ classification  = "Paramagnetic"
 permeability    = { value = 1.0, unit = "H/m", confidence = "derived", formula = "relative_permeability × μ₀" }
 ```
 
+Note: I still need to reverify this for comparing the two data from Aflow.org and next-gen.materialsproject.org. 
+
+
 ---
 
 ## `.fwe-objphys` — Physics Object Format
