@@ -106,7 +106,9 @@ Individual users always work in the open `.fwe` format — no keys, no barriers,
 
 ## Getting Started
 
-> ⚠️ FWE is in **pre-alpha**. No runnable build exists yet. This repo is the foundation being actively developed.
+FOR ALL FUTURE CONTRIBUTORS
+
+> ⚠️ FWE is still a concept WITH ARCHITECTURAL DESIGN DOCS, please go to: for vision and direction and more structural details. This repo is the foundation being actively developed.
 
 ### Prerequisites
 
