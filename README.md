@@ -108,7 +108,7 @@ Individual users always work in the open `.fwe` format — no keys, no barriers,
 
 FOR ALL FUTURE CONTRIBUTORS
 
-> ⚠️ FWE is still a concept WITH ARCHITECTURAL DESIGN DOCS, please go to: for vision and direction and more structural details. This repo is the foundation being actively developed.
+> ⚠️ FWE is still a concept WITH ARCHITECTURAL DESIGN DOCS, please go to: https://github.com/LazyR3nR3nOpenSoft/FWEvision-direction for vision and direction and more structural details. This repo is the foundation being actively developed.
 
 ### Prerequisites
 
