@@ -12,7 +12,7 @@
 
 FWE lets you **model, simulate, and iterate** without ever leaving the app.
 
-The simulation power already exists in open-source engines — FWE is the layer that finally makes them accessible and zero hassle for avenge user. No fragmented tools. No paid licenses(for person who doesn't need it and just wants to have a free software). No modular installs where half the physics are missing.
+The simulation power already exists in open-source engines — FWE is the layer that finally makes them accessible and zero hassle for average user. No fragmented tools. No paid licenses(for person who doesn't need it and just wants to have a free software). No modular installs where half the physics are missing.
 
 - **Model** any geometry — engines, speakers, rotors, airframes, anything
 - **Assign** real material properties with validated physical data
