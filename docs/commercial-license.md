@@ -4,7 +4,6 @@
 
 FWE core is GPLv3, free forever. The commercial license is for organizations that need to integrate FWE's file formats into their own products, or require enterprise-grade security for R&D workflows.
 
-*NOTE: this can still be remove or change base on community request. this is just for the development sake in mind and decisions will vary if contributors request it to be removed, You- the contributors have the decision I, only have the vision. -LazyR3nR3n*
 
 ---
 
