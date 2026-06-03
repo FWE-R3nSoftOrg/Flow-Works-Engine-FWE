@@ -144,6 +144,16 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 
+#Support
+
+If you want to support FWE, you can here:
+
+
+☕ [Ko-fi — LazyR3nR3n](https://ko-fi.com/lazyr3nr3n)
+
+
+
+---
 ## License
 
 FWE core is licensed under **GNU General Public License v3.0**.  
