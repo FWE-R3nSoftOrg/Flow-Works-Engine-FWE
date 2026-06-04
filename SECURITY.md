@@ -13,7 +13,7 @@ Include:
 - Potential impact
 - Suggested fix if you have one
 
-We'll respond within 72 hours and work with you on a coordinated disclosure.
+We'll respond to our best effort and work with you on a coordinated disclosure.
 
 ## Scope
 
