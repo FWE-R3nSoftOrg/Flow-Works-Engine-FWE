@@ -163,4 +163,16 @@ Commercial API license available for integrators building on the `.fwe` format �
 
 ---
 
+#Support
+
+If you want to support FWE, you can here:
+
+
+☕ [Ko-fi — LazyR3nR3n](https://ko-fi.com/lazyr3nr3n)
+
+
+
+---
+
+
 *LazyR3nR3nOpenSoft*
