@@ -8,7 +8,6 @@
 ---
 
 <img src="docs/FWElogo.png" width="200"/>
----
 
 ## What Is FWE?
 
