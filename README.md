@@ -5,7 +5,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Build Status](https://img.shields.io/badge/build-pre--alpha-orange)]()
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)]()
-
+![FWE Logo](docs/logo.png)
 ---
 
 ## What Is FWE?
