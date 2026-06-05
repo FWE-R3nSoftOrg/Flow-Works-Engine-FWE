@@ -7,7 +7,7 @@
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)]()
 ---
 
-![FWE Logo]<img src="docs/FWElogo.png" width="200"/>
+!<img src="docs/FWElogo.png" width="200"/>
 ---
 
 ## What Is FWE?
